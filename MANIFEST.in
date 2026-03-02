@@ -1,1 +1,1 @@
-include mkpipe_extractor_postgres/jars/*
+include mkpipe_loader_oracledb/jars/*
