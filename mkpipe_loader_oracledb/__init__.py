@@ -1,5 +1,7 @@
 from mkpipe.spark import JdbcLoader
 
+JAR_PACKAGES = ['com.oracle.database.jdbc:ojdbc11:23.6.0.24.10']
+
 
 class OracledbLoader(JdbcLoader, variant='oracledb'):
     driver_name = 'oracle:thin'
