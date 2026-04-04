@@ -6,6 +6,7 @@ JAR_PACKAGES = ['com.oracle.database.jdbc:ojdbc11:23.6.0.24.10']
 class OracledbLoader(JdbcLoader, variant='oracledb'):
     driver_name = 'oracle:thin'
     driver_jdbc = 'oracle.jdbc.OracleDriver'
+    _dialect = 'oracledb'
 
     def build_jdbc_url(self):
         return (
